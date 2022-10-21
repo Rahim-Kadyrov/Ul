@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> .expo{
+        background: blue;
+    }
+    </style>
+</head>
+<body>
+    
+<ul id="la"></ul>
+
+    <script>
+        let rahim = document.getElementById("la")
+        let li = document.createElement("li");
+        let li2 = document.createElement("li");
+        let li3 = document.createElement("li")
+        let li4 = document.createElement("li")
+        li.append("lorem");
+        li2.append("lorem");
+        li3.append("lorem");
+        li4.append("lorem");
+        rahim.append(li,li2,li3,li4);
+        li3.classList.add("expo")
+        console.log(document.body.firstElementChild);
+
+//nextElementSibling Следующий элемент
+//previousElementSibling Предедуший элемент
+//firsElementChild Первый доч.Элемент
+//lastElementChild Последний доч. Элемент
+    </script>
+</body>
+</html>
